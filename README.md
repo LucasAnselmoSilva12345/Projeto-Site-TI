@@ -1,2 +1,2 @@
 # Projeto-Site-TI
-Projeto de um site no qual conta a historias das linguagens de programação e suas principais características. Site feito em 2017
+Projeto de um site feito para contar as origens e historias das principais linguagens de programação. Site Feito em 2017
