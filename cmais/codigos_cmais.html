@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+<head>
+        <title>World of programming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="Projeto Site TI/imagens" href="imagens/c-2.ico"/>
+		<link rel="stylesheet" type="text/css" href="estilo_cmais.css"/>
+		</head>
+		
+		<body>
+		
+		<nav class="nav nav-aberta">
+			<div class="wrap">
+				<ul class="listaNav">
+					<p>C ++</p>
+					<li><a target="_Blank" href="Index.html">Home</a></li>
+					<li><a target="_Blank" href="Cmais.html">Home - C++</a></li>
+					<li><a target="_Blank" href="Historia_cmais.html">História do C++</a></li>
+					<li><a target="_Blank" href="criador_cmais.html"> Bjarne Stroustrup</a></li>
+					<li><a target="_Blank" href="programas_cmais.html">Programas usados para fazer C++</a></li>
+					<li><a target="_Blank" href="codigos_cmais.html">Códigos C++</a></li>
+					<li><a target="_Blank" href="aplicacao_cmais.html">Aplicação C++</a></li>
+					<li><a target="_Blank" href="Video_cmais.html">Video aula sobre C++</a></li>
+					</ul>
+			</div>
+		</nav>
+		
+		<h1>Códigos C++</h1>
+		<h5>Biblioteca padrão</h5>
+		<h2>A biblioteca padrão do C++ incorpora a biblioteca padrão do C com algumas pequenas modificações para trabalhar melhor com as novas funcionalidades criadas pela linguagem. Outra grande parte da biblioteca é composta pela biblioteca padrão de gabaritos (STL). </h2>
+		<h2>Ela fornece ferramentas úteis como containers (vetores, listas, entre outros), algoritmos (filtragem de elementos de container, busca, ordenação, entre outros) e iteradores (ponteiros inteligentes genéricos para acessar tais containers e interligá-los aos algoritmos). </h2>
+		<h2>Usando gabaritos é possível escrever algoritmos genéricos que funcionam para qualquer container ou sequência definida por iteradores.</h2>
+		<h2>Tendo em vista que um iterador nada mais é que um ponteiro encapsulado, é possível também utilizar os algoritmos genéricos em vetores 
+
+C, utilizando-se ponteiros comuns para tal. Como em C, os módulos da biblioteca são acessadas utilizando a diretiva #include; ao todo 
+
+são fornecidos 69 cabeçalhos-padrão, dos quais 19 estão em depreciação.</h2>
+	<h2>Devido ao fato da biblioteca padrão ter sido desenvolvida por especialistas e de já ter sido amplamente utilizada comercialmente e 
+
+academicamente, é recomendado utilizar seus componentes ao invés de componentes próprios.</h2>
+	<h2> Por exemplo, utilizar std::vector 
+
+e std::string ao invés de declarar vetores herdados do C não somente torna o desenvolvimento mais simples, como também traz mais 
+
+segurança e escalabilidade para o sistema.</h2>
+
+<h2>A biblioteca STL foi originalmente desenvolvida pela HP e posteriormente pela SGI, antes de sua incorporação na biblioteca padrão do 
+
+C++. </h2><h2>O padrão não a define como "STL", mas ainda utiliza-se esse termo para distingui-la do resto da biblioteca.</h2>
+
+<h2>O projeto STLPort mantém uma implementação atualizada da biblioteca, e é baseado na SGI STL. O projeto Boost fornece elementos 
+
+adicionais à STL, dos quais alguns já são considerados a serem parte da biblioteca padrão no futuro.</h2>
+		
+	<h5>Objetos</h5>
+
+<h2>O C++ introduziu alguns conceitos de orientação a objetos ao C, como exemplificado pelas classes, que apresentam quatro 
+
+características comumente presentes em linguagens de programação orientadas a objeto: abstração, encapsulamento, herança e 
+
+polimorfismo.</h2>
+<h2> Cada vez que uma classe é instanciada é criado um objeto na memória, que é basicamente um conjunto de atributos e operações reunidos.</h2>
+
+	<h2>O C++ também suporta argumentos padrão para os parâmetros das funções, o que permite omitir tal parâmetro na invocação da função. 
+
+</h2><h2>Quando uma função é chamada com menos argumentos que o esperado e os argumentos explícitos são compatíveis com os parâmetros da 
+
+esquerda à direita, os últimos parâmetros são atribuídos de acordo com o argumento padrão.</h2><h2> Semanticamente parecida com a 
+
+sobrecarga de funções, essa técnica permite simplificar situações em que uma função é declarada somente para invocar uma sobrecarga 
+
+dela própria com algum parâmetro especificado.</h2>
+
+	
+	<h5>Exemplos de código</h5>
+
+<fieldset><h2>Exemplo de um programa que imprime na tela "Olá, Mundo!".</h2>
+
+<h2># include <iostream>
+
+int main()
+{
+    std::cout << "Olá, Mundo!" << std::endl;
+    return 0;
+}</h2>
+
+</fieldset>
+
+	<h5>Biblioteca Boost</h5>
+
+<h2>Parte da comunidade de desenvolvimento do C++ foi responsável pela criação da Boost, um conjunto de bibliotecas que estendem a 
+
+funcionalidade da linguagem, mais especificamente, da biblioteca padrão. </h2>
+
+<h2>O processo de disponibilização de bibliotecas da Boost é mais rápido do que o do comitê de padronização da linguagem, e o projeto 
+
+acaba servindo como uma forma de teste em campo das bibliotecas, que eventualmente podem ser migradas para a especificação da 
+
+linguagem. Para o TR1 do C++0x, pelo menos dez bibliotecas já foram aceitas.</h2><h2> A base de usuários da Boost é grande, o que reflete 
+
+no controle de qualidade.</h2><h2> Funcionalidades oferecidas vão desde bibliotecas gerais como smart_ptr a abstrações do sistema 
+
+operacional como o filesystem a bibliotecas para usuários avançados como a MPL.</h2>
+
+	<h5>Aplicativos desenvolvidos em C++</h5>
+<h2>Abaixo segue uma lista de exemplos de aplicativos parcial ou totalmente escritos em C++, de acordo com Bjarne Stroustrup, que não 
+
+garante sua precisão e veracidade, ainda que seja responsável por sua publicação.</h2>
+<table Border="0" align="right">
+            <thead>
+            <tr>
+                <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/blender.png" alt="Star Wars"/>
+                <figcaption>
+                  
+                 
+                </figcaption>
+            </figure>
+		  </td>
+		  
+		    <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/ipod.jpg" alt="Jurassic Park"/>
+                <figcaption>
+                    
+                   
+                </figcaption>
+            </figure>
+		  </td>
+		
+                <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/Mac-OS-X.png" alt="Indiana Jones"/>
+                <figcaption>
+                  
+                    
+                </figcaption>
+            </figure>
+		  </td>
+		  
+		    <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/ofice.png" alt="Harry Potter"/>
+                <figcaption>
+                    
+                    
+                </figcaption>
+            </figure>
+		  </td>
+		  </tr>
+		  </thead>
+		  </table>
+		  
+		  
+		  
+		  <table Border="0" align="right">
+            <thead>
+            <tr>
+                <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/visual.png" alt="Star Wars"/>
+                <figcaption>
+                  
+                 
+                </figcaption>
+            </figure>
+		  </td>
+		  
+		    <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/win.png" alt="Jurassic Park"/>
+                <figcaption>
+                    
+                   
+                </figcaption>
+            </figure>
+		  </td>
+		 
+		
+		
+		
+		
+                <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/mozila.png" alt="Indiana Jones"/>
+                <figcaption>
+                  
+                    
+                </figcaption>
+            </figure>
+		  </td>
+		  
+		    <td>
+             
+	<figure class="foto-legenda">
+                <img src="imagens/my.png" alt="Harry Potter"/>
+                <figcaption>
+                    
+                    
+                </figcaption>
+            </figure>
+		  </td>
+		  </tr>
+		  </thead>
+		  </table>
+
+	
+	
+		
+		</body>
+		</html>

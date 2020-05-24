@@ -1,0 +1,168 @@
+body {  
+	background-color: #faf9f9;
+	margin: -44px 50px 50px 0px;
+	}
+	
+p{
+    font-size: 40px;
+    font-weight: bolder; 
+    text-align: center;
+    }
+	
+	.listacomun{
+                text-align: justify;
+                margin: 10px auto 10px auto;
+                padding: 10px;
+            }            
+            
+    .listacomun li{
+                text-indent: 5px;
+            }
+	
+h1 {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bolder;
+	margin-left: 280px;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: justify;
+	margin: relative;
+	float: center;
+	margin-left: 300px;
+	
+	}
+	
+h3 {
+	font-size: 18px;
+	text-align: justify;
+	margin: relative;
+	float: center;
+	margin-left: 300px;
+}
+
+h4 {
+	font-size: 20px;
+	text-align: justify;
+	margin: relative;
+	float: center;
+	margin-left: 300px;
+}
+
+h5{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+	margin-left: 280px;
+}
+
+h6 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+	margin-left: 280px;
+	font-family: Arial;
+}
+
+
+	.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+       
+  .nav {
+    background: #FFF;
+	  z-index: 200;
+	  position: fixed;
+	  width: 20%;
+	  font-size: 1em;
+	  float: left;
+	  background: #444;
+	  margin-top: 10px;
+	  height: 100%;
+  }
+       
+     .nav ul {
+        padding: 1em;
+      }
+       
+        li {
+	         display: block;
+	         width: 100%;
+	         margin: 1em 2em 1em 0;
+         }
+       
+           a {
+	           text-decoration: none;
+	           color: #FFF;
+           }
+       
+             a:hover {
+       		      color: blue;
+             }
+       
+       .nav-toggle {
+       		display: none;
+       }
+       
+.foto {
+    width: 80%;
+    float: right;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 800px) {
+.wrap {
+	 max-width: 100%;
+	 margin: 0;
+}
+  
+  .nav {
+	       		width: 175px;
+	       		position: absolute;
+	       		top: 0;
+	       		left: 0;
+	       }
+	       
+      .nav ul {
+	        padding: .5em;
+	        margin: 0;
+          background: #444;
+	     }		
+	       
+	       li {
+		         margin: 0;
+		         padding: 0;
+		         display: block;
+	        }
+       			
+	           li a {
+		           padding: 0.5em 0 0.5em 0;
+		           display: block;
+               color: #FFF;
+	           }
+  
+            
+	      .nav-toggle {
+	       		position: absolute;
+	       		top: 0;
+	       		right: -56px;
+            color: #FFF;
+	       		cursor: pointer;
+	       		width: 44px;
+	       		height: 24px;
+	       		z-index: 1000;
+	       		display: block;
+	       		background: #444;
+	       		padding: 12px 6px 6px 6px;
+	       }
+  
+      .foto {
+	       	width: 100%;
+	       	position: relative;
+	       	float: none;
+	   }
+}
+

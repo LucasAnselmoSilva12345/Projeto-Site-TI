@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+<head>
+        <title>World of programming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="Projeto Site TI/imagens" href="imagens/icone_py.ico"/>
+		<link rel="stylesheet" type="text/css" href="estilo_python.css"/>
+	
+		</head>
+		
+		<body>
+		
+		<nav class="nav nav-aberta">
+			<div class="wrap"> 
+				<ul class="listaNav">
+					<p>Python</p>
+				<li><a target="_Blank" href="Index.html">Home</a></li>
+					<li><a target="_Blank" href="python.html">Home - Python</a></li>
+					<li><a target="_Blank" href="Historia_python.html">Historia do Python</a></li>
+					<li><a target="_Blank" href="criador_python.html">Criador</a></li>
+					<li><a target="_Blank" href="programas_python.html">Programas usados para fazer Python</a></li>
+					<li><a target="_Blank" href="codigos_python.html">Codigos Python</a></li>
+					<li><a target="_Blank" href="aplicacao_python.html">Aplicação Python</a></li>
+					<li><a target="_Blank" href="Video_python.html">Video aula sobre Python</a></li>
+					
+					</ul>
+			</div>
+		</nav>
+		
+		<h1>Códigos Python</h1>
+		<h5>Agora você vera um pouco de codigos usados em Python</h5>
+		<img src="imagens/py12.jpg" align="right" width="250" height="200">
+		<h2>Abrindo e fechando o interpretador</h2>
+		<h2>A melhor forma de aprender a programar é usando um interpretador em modo interativo.</h2><h2> Dessa forma você pode digitar comandos linha por linha e observar a cada passo como o computador interpreta e executa esses comandos.</h2><h2> Para fazer isso em Python, há duas maneiras:</h2>
+		<ul type="1">
+		<li><h2>1-executar o interpretador em modo texto (chamado "Python (command line)" no Windows, ou simplesmente python no Linux)</h2> </li>
+		<li><h2>2-usar o IDLE, que é um ambiente baseado em janelas.</h2></li>
+		</ul>
+		
+		<h2>Não importa o Sistema Operacional que você está utilizando, o IDLE, vai execultar da mesma forma, e quando for instalado, aparece-rá uma mensagem assim:</h2>
+		<fieldset for="Mensagem"><h2>Python 2.5.1 (r251:54863, Oct  5 2007, 13:50:07) <br>
+									[GCC 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)] on linux2<br>
+									Type "help", "copyright", "credits" or "license" for more information.<br>
+									>>><br>Para sair do interpretador você pode fechar a janela do IDLE, ou teclar [CTRL]+[D] (no IDLE ou no interpretador em UNIX) ou [CTRL]+[Z] e então [ENTER] (no interpretador DOS).</h2>
+		</fieldset>
+		
+		
+		<h5>Uma calculadora melhor</h5>
+		<h2>Vamos então aproveitar a deixa e escrever algo. Experimente escrever uma expressão aritmética bem simples, como 2+2:</h2>
+		<fieldset for="soma"><h2>>>> 2+2
+4
+>>><br>
+A resposta é reconfortante: para Python, 2+2 é igual a 4. Você pode experimentar outras expressões mais complexas, mas é bom saber que os quatro operadores básicos em Python (e em quase todas as linguagens modernas) são esses:<br>
+<br>
+<br>
+<br>
++ adição<br>
+
+- subtração<br>
+
+* multiplicação<br>
+
+/ divisão<br>
+<br>
+<br>
+<br>
+
+Em Python, assim como na linguagem C, os números inteiros têm um tratamento especial. Isso fica evidente quando fazemos uma divisão:<br>
+
+
+>>> 7/2<br>
+3<br>
+>>><br>
+<br>
+<br>
+
+Em vez de 3,5, o resultado foi 3. Isso acontece sempre que todos os números de uma expressão são inteiros. Neste caso, Python imagina que se deseja um resultado inteiro também (esse comportamento estranho às vezes é conveniente em programação).<br>
+<br>
+<br>
+Se você quiser operar com números decimais, deve usar o ponto e não a vírgula como separador decimal:<br>
+<br>
+<br>
+
+>>> 7.0/2<br>
+3.5<br>
+>>> 7/2.0<br>
+3.5<br>
+>>> 7/2.<br>
+3.5<br>
+>>><br>
+<br>
+<br>
+Note que basta digitar um ponto após o número. O computador não consegue lidar com números do conjunto dos reais, mas apenas com uma aproximação chamada "número de ponto-flutuante" (porque o ponto decimal pode aperecer em qualquer posição do número). Ao lidar com ponto-flutuante, às vezes vemos resultados estranhos:<br>
+<br>
+<br>
+
+>>> 2.4 * 2<br>
+4.7999999999999998<br>
+>>><br>
+<br>
+<br>
+O resultado não deveria ser 4.8? Deveria, mas antes de ficar revoltado note que a diferença foi muito pequena. Acontece que o sistema de "ponto-flutuante" padrão IEEE-754 usado em quase todos os computadores atuais tem uma precisão limitada, e Python não esconde este fato de você, programador. O problema não está na conta, mas na própria representação interna do valor 2.4:<br>
+
+<br>
+<br>
+>>> 2.4<br>
+2.3999999999999999<br>
+<br>
+<br>
+Para exibir valores de ponto-flutuante para um usuário sem assustá-lo, use o comando print:<br>
+
+<br>
+<br>
+>>> print 2.4 * 2<br>
+4.8<br>
+>>> <br>
+<br>
+<br>
+Você pode digitar espaços entre os números e operadores para fazer uma expressão longa ficar mais legível. Veja esse exemplo:<br>
+<br>
+<br>
+
+>>> 1 + 2 * 3<br>
+7<br>
+>>><br>
+<br>
+<br>
+Note que o interpretador Python é mais esperto que uma calculadora comum.<br> 
+<br>
+<br>
+Ele sabe que a multiplicação deve ser efetuada antes da adição. <br>
+<br>
+<br>
+Se você teclar a mesma expressão em uma calculadora qualquer obterá o resultado 9, que é incorreto.<br>
+<br>
+<br>
+ Em Python, se você realmente deseja efetuar a soma antes da multiplicação, precisa usar parênteses:<br>
+<br>
+<br>
+
+>>> (1 + 2) * 3<br>
+9<br>
+>>><br><br>
+<br>
+Ao contrário do que você aprendeu na escola, aqui os símbolos [] e {} não servem para agrupar expressões dentro de outras expressões.<br>
+ Apenas parênteses são usados:<br>
+ <br>
+<br>
+
+
+>>> ( 9 - ( 1 + 2 ) ) / 3.0<br>
+2.0<br>
+>>> ( 9 - 1 + 2 ) / 3.0<br>
+3.33333333333<br>
+>>><br>
+<br>
+<br>
+DICA: Se você escrever algo que o interpretador não reconhece, verá na tela uma mensagem de erro.<br>
+ Não crie o mau hábito de ignorar essas mensagens, mesmo que elas pareçam difíceis de entender num primeiro momento.<br>
+ A única vantagem de cometer erros é aprender com eles, e se a preguiça o impedir de ler as mensagens, seu aprendizado será bem mais lento.<br>
+<br>
+<br>
+Veja aqui como decifrar as mensagens de erro do Python.<br>
+<br>
+<br>
+Como ler uma mensagem de erro<br>
+<br>
+<br>
+A dura realidade é que um programador profissional passa boa parte de sua vida caçando erros, e por isso é fundamental saber extrair o máximo de informações das mensagens resultantes.<br>
+<br>
+<br>
+A essa altura você talvez já tenha provocado um erro para ver o que acontece. Vamos fazer isso agora, e aprender a ler as mensagens resultantes. Pode parecer perda de tempo, mas é importantíssimo saber interpretar as mensagens de erro porque a melhor forma de aprender a programar é experimentando, e ao experimentar você certamente vai provocar muitos erros.<br>
+<br>
+<br>
+Como exemplo, vamos digitar uma expressão aritmética sem sentido:<br>
+<br>
+<br>
+
+>>> 7 + / 2<br>
+  File "<stdin>", line 1<br>
+    7 + / 2<br>
+        ^<br>
+SyntaxError: invalid syntax<br>
+>>> <br>
+<br>
+<br>
+O interpretador indica o local de erro em vermelho no IDLE, ou com o sinal ^ no console. <br>
+Nos dois casos a última linha contém as informações mais importantes: SyntaxError: invalid syntax. <br>
+A primeira parte, SyntaxError é o tipo do erro, e após o sinal de ":" vem a descrição: erro de sintaxe inválida.<br>
+<br>
+<br>
+No console a primeira linha da mensagem de erro indica em a linha do seu código onde ocorreu o problema.<br>
+ No modo interativo essa informação pouco útil, mas quando fizermos programas extensos será muito bom saber exatamente em qual linha está a falha.<br>
+ Agora vamos provocar um outro tipo de erro:<br>
+<br>
+<br>
+
+>>> 1.5/0<br>
+Traceback (most recent call last):<br>
+  File "<stdin>", line 1, in <module><br>
+ZeroDivisionError: float division<br>
+>>> <br>
+<br>
+<br>
+Novamente, a parte mais importante é a última linha, que nesse caso é bem fácil de entender: ZeroDivisionError: float division, ou "erro de divisão por zero em divisão de ponto-flutuante".<br>
+</h2>
+</fieldset>
+
+<h5>Conversor de dólares</h5>
+<h2>Digamos que você tem uma loja de discos importados, e precisa constantemente converter 
+
+dólares em reais. O valor do dólar para venda em 20/05/1999 é de 1.686.</h2><h2> Para 
+
+converter US$9,95 e US$11,95 em reais você pode digitar:</h2>
+<fieldset for="dolar">>>> 9.95 * 1.686
+<h2><br>
+16.775699999999997
+<br>
+>>> 11.95 * 1.686
+<br>
+20.147699999999997
+<br>
+>>> 
+<br>
+<br>
+Mas há uma forma melhor: em vez de digitar o valor 1.686 o tempo todo, você pode armazenar 
+
+esse valor na memória do computador, assim:
+<br>
+<br>
+
+
+>>> d = 1.686
+<br>
+>>>
+<br>
+<br>
+Note que o interpretador não respondeu nada (a menos que você tenha cometido um erro), mas 
+
+ele guardou o número em uma posição de sua memória, e associou o símbolo "d" a essa 
+
+posição. Agora, fica mais confortável converter dólares em reais:
+<br>
+<br>
+>>> 9.85 * d<br>
+16.607099999999999<br>
+>>> 11.95 * d<br>
+20.147699999999997<br>
+>>> 5 * d, 7 * d, 9 * d<br>
+(8.4299999999999997, 11.802, 15.173999999999999)<br>
+
+</h2>
+</fieldset>
+
+<h2>Link para mais informações: <button><a target="_Blank" href="https://wiki.python.org.br/AprendaProgramar">Codigos Python</a></h2>
+
+		</body>
+		</html>

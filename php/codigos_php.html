@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+<head>
+        <title>World of programming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="Projeto Site TI/imagens" href="imagens/Icone_PHP.ico"/>
+		<link rel="stylesheet" type="text/css" href="estilo_PHP.css"/>
+	
+		</head>
+		
+		<body>
+		
+		<nav class="nav nav-aberta">
+			<div class="wrap">
+				<ul class="listaNav">
+					<p>PHP</p>
+				<li><a target="_Blank" href="Index.html">Home</a></li>
+					<li><a target="_Blank" href="PHP.html">Home_PHP</a></li>
+					<li><a target="_Blank" href="Historia_PHP.html">Historia do PHP</a></li>
+					<li><a target="_Blank" href="Criador_PHP.html">Rasmus Lerdof</a></li>
+					<li><a target="_Blank" href="programas_PHP.html">Programas usados para fazer PHP</a></li>
+					<li><a target="_Blank" href="codigos_php.html">Codigos PHP</a></li>
+					<li><a target="_Blank" href="aplicacao_PHP.html">Aplicação PHP</a></li>
+					<li><a target="_Blank" href="Video_PHP.html">Video aula sobre PHP</a></li>
+					
+					</ul>
+			</div>
+		</nav>
+		
+		<h1>Códigos PHP</h1>
+		<h5>Seguem abaixo varios exemplos de codigos para você usar na programação de PHP</h5>
+		<h2>Programa Olá Mundo<h2>
+		<fieldset id="Mundo">Este é um exemplo do Programa Olá Mundo em PHP:
+		<h2><"?php echo "Olá, Mundo!";?"></h2>
+		</fieldset>
+		
+		<h2>Sintaxe</h2>
+		<fieldset id="Sintaxe" align="center"><h2>Sintaxe</h2>
+		<h2><"?php
+# Isto é apenas um comentário
+// Isto também é um comentário
+/* comentário */<br>
+
+<h2>include('code.php');      // Inclui e executa um trecho opcional de código</h2>
+<h2>include 'code.php';       // Maneira alternativa, funciona apenas com include e require.</h2>
+<h2>require('code.php');      // O mesmo que 'include', porém pára a execução caso o arquivo não seja encontrado</h2>
+<h2>require_once('code.php'); // O mesmo que require, mas evita que o trecho seja incluído novamente</h2>
+<br>
+<h2>echo 'abc';               # Escrever abc</h2>
+<h2>print 'abc';              # Realiza o mesmo que 'echo'</h2>
+<h2>$res = print 'abc';       # retorna se foi executado com sucesso saída ou não (0 ou 1) Coisa que o echo não faz.</h2>
+<br>
+<h2>$x = 2; # Variáveis</h2<
+ <h2> if ($x >= 1 && $x < 3) {   // se a variavel $x for maior ou igual a 1 E(AND) menor que 3</h2>
+  <h2>  echo 'Olá mundo!';     // escreve "Olá mundo!"</h2>
+<h2>} else {                   // Se não... </h2>
+ <h2>   print('Adeus mundo!'); // escreve 'Adeus mundo!', print e echo podem ser usados com ou sem parênteses.</h2>
+<h2>}</h2>
+ 
+<h2>?"></h2></h2>
+		</fieldset>
+		
+		<h2>Construtores e destrutores</h2>
+		<fieldset id="Construtores"><h2>Construtores e destrutores</h2>
+		<h2>
+		<"?php
+		<h2>class Person {</h2>
+
+		<h2>/*</h2>
+		<h2>* Construtor</h2>
+		<h2>* O construtor é chamado automaticamante quando o objeto é instanciado!</h2>
+		<h2>*/</h2>
+		<h2>function __construct() {</h2>
+        <h2>print "Você chamou a função construtora";</h2>
+		<h2>}</h2>
+    
+
+		<h2>/*</h2>
+		<h2>* Destruidor</h2>
+		<h2>* Serve para realizar alguma operação no instante em que se destrói o objeto </h2>
+		<h2>*/ </h2>
+		<h2>function __destruct() {</h2>
+        <h2>print "Você chamou a função destruidora!";</h2>
+		<h2>}</h2>
+		<h2>}</h2>
+		<h2>?"></h2></h2>
+		</fieldset>
+		
+		
+		
+		<h2>Comparação de Valores</h2>
+		<h3>Ler dois valores registrados em variáveis e indicar o maior:</h3>
+
+		<h3>Obs: Na estrutura de controle(if else) repare que não utilizamos as chaves de abertura e de fechamento.</h3>
+		<fieldset id="Ler"><h2>Comparação de valores</h2>
+		<h2><"?php</h2>
+<h2>$valor1 = 40;</h2>
+<h2>$valor2 = 20;</h2>
+
+<h2>if (  $valor1 > $valor2)</h2>
+  <h2>echo "A variável $valor1 é maior que a variável $valor2";</h2>
+<h2>else if (  $valor2 > $valor1 )</h2>
+  <h2>echo "A variável $valor2 é maior que a variável $valor1";</h2>
+<h2>else</h2>
+  <h2>echo "A variável $valor1 é igual à variável $valor2";</h2>
+<h2>?"></h2>
+</fieldset>
+
+<h2>Link para mais informações<button><a target="_Blank" href="https://pt.wikipedia.org/wiki/Lista_de_exemplos_de_c%C3%B3digo_PHP">Codigos PHP</a></h2>
+		
+	
+		
+		
+		
+		
+		</body>
+		</html>

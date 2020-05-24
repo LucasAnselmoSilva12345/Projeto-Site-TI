@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+<head>
+        <title>World of programming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="Projeto Site TI/imagens" href="imagens/C_ico.ico"/>
+		<link rel="stylesheet" type="text/css" href="estilo_C.css"/>
+		</head>
+		
+		<body>
+		
+		<nav class="nav nav-aberta">
+			<div class="wrap">
+				<ul class="listaNav">
+					<p>C</p>
+					<li><a target="_Blank" href="Index.html">Home</a></li>
+					<li><a target="_Blank" href="C.html">Home - C</a></li>
+					<li><a target="_Blank" href="Historia_C.html">História do C</a></li>
+					<li><a target="_Blank" href="criador_C.html">Kenneth Thompson e Dennis Ritchie</a></li>
+					<li><a target="_Blank" href="programas_C.html">Programas usados para fazer C</a></li>
+					<li><a target="_Blank" href="codigos_C.html">Códigos C</a></li>
+					<li><a target="_Blank" href="aplicacao_C.html">Aplicação C</a></li>
+					<li><a target="_Blank" href="Video_C.html">Video aula sobre C</a></li>
+					</ul>
+			</div>
+		</nav>
+		
+		<h1> Códigos C </h1>
+		<h5>Para começarmos de uma forma tranquilo, um programa em C, dizendo "Olá Mundo" </h5>
+		<fieldset>
+			<h2>Programa Olá Mundo em 2 formas:</h2>
+			<img src="imagens/olamundo.jpg" align="right" width="300" height="150">
+			<h3>
+			<br>
+			#include <"stdio.h><br>
+			int main(void)<br>
+			{<br>
+				puts("Hello, World!");<br>
+			}<br>
+			</h3>
+		</fieldset>
+		<h5>Matemática</h5>
+		<fieldset>
+		<h2>Matemática</h2>
+		<h2>O seguinte código realiza seis operações matemáticas, adição, subtração, multiplicação, divisão, exponenciação e radiciação, e em seguida envia os seus respectivos resultados para a saída padrão (normalmente o console).</h2>
+		<h3>
+		# include <math.h>  // necessária para pow() e sqrt()<br>
+# include <stdio.h> // necessária para printf() e getchar()<br>
+
+int main()<br>
+{<br>
+   int a = 2, b = 3;<br>
+
+   printf("%d + %d = %d\n", a, b, a + b);<br>
+   printf("%d - %d = %d\n", a, b, a - b);<br>
+   printf("%d x %d = %d\n", a, b, a * b);<br>
+   printf("%d / %d = %0.1f\n", a, b, (float) a / b); // resultado fracionário<br>
+   printf("%d elevado a %d = %0.1f\n", a, b, pow(a, b)); // pow(base, expoente)<br>
+   printf("raiz quadrada de %d = %0.1f\n", a, sqrt(a));<br>
+
+   getchar(); //O uso dessa função é necessária apenas nos sistemas Windows, para manter o terminal (Prompt de comando) aberto<br>
+   return 0;<br>
+}<br>
+		</h3>
+		</fieldset>
+		
+		<h5>Estruturas de dados</h5>
+		<fieldset>
+		<h2>No exemplo seguinte, é criada uma estrutura composta por 3 elementos de tipos diferentes. Após ser declarada uma variável "x" do tipo 
+
+struct "y", onde "y" é o nome da estrutura, para se acessar os elementos usa-se a seguinte sintaxe: x.elemento.</h2>
+
+		<h3>
+		# include <stdio.h> <br>
+struct Pessoa<br>
+{<br>
+   char nome[64]; // vetor de 64 chars para o nome<br>
+   unsigned short int idade;<br>
+   char rg[13];<br>
+};<br>
+
+int main()<br>
+{<br>
+   struct Pessoa exemplo = {"Fulano", 16, "00.000.000-00"}; // declaração da variável "exemplo"<br>
+
+   printf("Nome: %s\n", exemplo.nome);<br>
+   printf("Idade: %hu\n", exemplo.idade);<br>
+   printf("RG: %s\n", exemplo.rg);<br>
+
+   getchar(); // desnecessário, mas comumente utilizado em ambientes windows para "segurar" o terminal aberto<br>
+   return 0;<br>
+}<br>
+Ou, equivalente:<br>
+
+# include <stdio.h><br>
+
+typedef struct Pessoa<br>
+{
+   char nome[64]; // vetor de 64 chars para o nome<br>
+   unsigned short int idade;<br>
+   char rg[13];<br>
+} Pessoa;<br>
+
+int main()<br>
+{
+   Pessoa exemplo = {"Felipe", 16, "00.000.000-00"}; // declaração da variável "exemplo"<br>
+
+   printf("Nome: %s\n", exemplo.nome);<br>
+   printf("Idade: %hu\n", exemplo.idade);<br>
+   printf("RG: %s\n", exemplo.rg);<br>
+
+   getchar();<br>
+   return 0;<br>
+}<br>
+		</h3>
+		</fieldset>
+		
+		</body>
+		</html>

@@ -1,0 +1,143 @@
+body {  
+	background-color: #faf9f9;
+	margin: 20px 50px 50px 0px;
+	}
+	
+p{
+    font-size: 40px;
+    font-weight: bolder; 
+    text-align: center;
+    }
+	
+	.listacomun{
+                text-align: justify;
+                margin: 10px auto 10px auto;
+                padding: 10px;
+            }            
+            
+    .listacomun li{
+                text-indent: 5px;
+            }
+	
+h1 {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bolder;
+	
+}
+
+h2 {
+	font-size: 20px;
+	text-align: justify;
+	margin: relative;
+	text-align: center;
+	
+	
+	}
+	
+h3 {
+	font-size: 18px;
+	text-align: justify;
+	margin: relative;
+	text-align: center;
+	
+}
+
+h4 {
+	font-size: 20px;
+	text-align: justify;
+	margin: relative;
+	text-align: center;
+	
+}
+
+h5{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+	
+}
+
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+       
+  .nav {
+    background: #FFF;
+    z-index: 200;
+    position: relative;
+    width: 110%;
+    font-size: 1em;
+    overflow: auto;
+  }
+       
+     .nav ul {
+        padding: 1em;
+      }
+       
+        li {
+	         display: inline-block;
+	         margin-right: 2em;
+         }
+       
+           a {
+	           text-decoration: none;
+	           color: #444;
+           }
+       
+             a:hover {
+       		      color: blue;
+             }
+       
+       .nav-toggle {
+       		display: none;
+       }
+       
+.foto {
+    width: 100%;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 800px) {
+.wrap {
+	 max-width: 100%;
+	 margin: 0;
+}
+  
+  .nav.nav-aberta {
+		   position: relative;
+		   padding: 0 0 0.5em 0;
+		   height: 0;
+	 }   
+	       
+      .nav ul {
+	        padding: .5em;
+	        margin: 0;
+          background: #444;
+	     }		
+	       
+	       li {
+		         margin: 0;
+		         padding: 0;
+		         display: block;
+		         border-bottom: 1px solid #FFF;
+	        }
+       			
+	           li a {
+		           padding: 0.5em 0 0.5em 0;
+		           display: block;
+               color: #FFF;
+	           }
+  
+            li:last-child {
+              border-bottom:none;
+            }
+	       
+	       .nav-toggle {
+	       		display: block;
+	       		padding: .4em;
+	       		margin: .5em 0;
+	       }
+}

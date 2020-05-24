@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+    <head>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="Projeto Site TI/imagens" href="imagens/index.ico"/>
+		<link rel="stylesheet" type="text/css" href="estilo_cadastro.css"/>
+		
+		</head>
+		
+		<body>
+		
+		<nav class="nav nav-aberta">
+	<div class="wrap">
+			<ul class="listaNav">
+					<li><a target="_Blank" href="Java.html">Java</a></li>
+					<li><a target="_Blank" href="Java_script.html">Java Script</a></li>
+					<li><a target="_Blank" href="PHP.html">PHP</a></li>
+					<li><a target="_Blank" href="python.html">Python</a></li>
+					<li><a target="_Blank" href="Ce_xarpe.html">C#</a></li>
+					<li><a target="_Blank" href="Cmais.html">C++</a></li>
+					<li><a target="_Blank" href="CSS.html">CSS</a></li>
+					<li><a target="_Blank" href="C.html">C</a></li>
+					<li><a target="_Blank" href="Loja.html">Loja Programador</a></li>
+					<li><a target="_Blank" href="Sobre.html">Sobre Nós</a></li>
+			</ul>
+		</div>
+</nav>
+
+<form method="post" action="mailto:robinson.bocchini@etec.sp.gov.br"> <!--tem que ter o cliente de email instalado na sua máquina (exemplo:outlook) outra forma é utlizar outra linguagem do lado do servidor exemplo: PHP -->
+    <fieldset id="usuario">Identificação do Usuário
+        <p><label for="cNome">Nome:</label>
+            <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" required="required"/></p>
+       
+        <p><label for="cMail">E-mail:</label>
+           <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="" required/></p>    
+    
+        <fieldset id="sexo">Sexo:
+            <p><label for="cMasc">Masculino:</label>
+               <input type="radio" name="tSexo" id="cMasc" checked/></p>
+            <p><label for="cFem">Feminino:</label>
+               <input type="radio" name="tSexo" id="cFem"/></p>
+        </fieldset>    
+        <p><label for="cNasc">Data de Nascimento:</label>
+                <input type="date" name="tNasc" id="cNasc" /></p>
+    </fieldset>
+    
+    <fieldset id="endereco">Endereço do Usuário
+        <p><label for="cRua">Logradouro:</label>
+           <input type="text" name="tRua" id="cRua" size="20" maxlength="80" placeholder="Rua, Av, Trav, ..."/>
+        <p><label for="cNum">Número:</label>
+           <input type="Number" name="tNum" id="cNum" min="0" max="99999"/>
+        <p><label for="cEst">Estado:</label>
+           <select name="tEst" id="cEst">
+               <optgroup label="Região Sudeste">
+               <option value="SP">São Paulo</option>
+               <option value="RJ">Rio de Janeiro</option>
+               <option value="MG">Minas Gerais</option>
+               <option value="ES">Espírito Santo</option>
+               </optgroup>
+               <optgroup label="Região Sul">
+               <option value="PR">Paraná</option>
+               <option value="SC">Santa Catarina</option>
+               <option value="RS">Rio Grande do Sul</option>
+               </optgroup>
+           </select></p>
+        <p><label for="cCid">Cidade:</label>
+            <input type="text" name="tCid" id="cCid" size="30" maxlength="40" placeholder="Sua Cidade" list="cidades"/>
+            <datalist id="cidades">
+                <option value="Itu"></option>
+                <option value="Salto"></option>
+                <option value="Porto Feliz"></option>
+                <option value="Sorocaba"></option>
+                <option value="Indaiatuba"></option>
+                <option value="Campinas"></option>
+            </datalist></p>
+    </fieldset>
+    
+    <fieldset id="Escolha">Escolha sua Camisa
+		<p><label for="cEsc">Escolha sua Camisa:</label>
+			<input type="text" name="tEsc" id="cEsc" size="30" maxlength="40" placeholder="Sua Camisa" list="camisas" />
+			<datalist id="camisas">
+			<option value="Java"></option>
+			<option value="JavaScript"></option>
+			<option value="PHP"></option>
+			<option value="Python"></option>
+			<option value="C#"></option>
+			<option value="C++"></option>
+			<option value="CSS"></option>
+			<option value="Ruby"></option>
+			<option value="C"></option>
+			<option value="Objective - C"></option>
+			
+			<p><label for="cCor">Qual a sua cor favorita para camisa:</label>
+                    <input type="color" name="tCor" id="cCor"/></p>
+		
+			
+			 <fieldset id="Opção">Deseja Personalizar sua camisa
+                <p><label for="cMasc">Sim</label>
+                    <input type="radio" name="tSexo" id="cMasc" /></p>
+                
+                <p><label for="cFem">Não</label>
+                    <input type="radio" name="tSexo" id="cFem" /></p>
+            </fieldset>
+
+
+
+		 <p><label for="cMsg">Deixe aqui sua personalização</label>
+                <textarea name="tMsg" id="cMsg" cols="50" rows="5" placeholder="Deixe sua mensagem">
+                    
+                </textarea></p>
+            
+		
+		</fieldset>
+		
+		 <fieldset id="Opção">Opção de Pagamento
+                <p><label for="cMasc">Crédito</label>
+                    <input type="radio" name="tSexo" id="cMasc" /></p>
+                
+                <p><label for="cFem">Débito</label>
+                    <input type="radio" name="tSexo" id="cFem" /></p>
+				
+				<p><label for="cFem">Boleto</label>
+                    <input type="radio" name="tSexo" id="cFem" /></p>
+					
+				<p><label for="cNum">Bandeira do cartão:</label>
+                <input type="text" name="tNum" id="cNum" min="0" max="16" placeholder="Digite a Bandeira do cartão"/></p>
+				
+				<p><label for="cNum">Número:</label>
+                <input type="text" name="tNum" id="cNum" min="0" max="16" placeholder="Digite numero do cartão sem espaço"/></p>
+			
+			</fieldset>
+	
+            
+            <p>
+           <input type="checkbox" name="tNot" id="cNot" checked/>
+         <label for="cNot">Gostaria de receber novidade via e-mail:</label>
+        </p>
+       
+    </fieldset>
+    <h2>Clique no botão ao lado, para finalizar sua compra:
+	<button><a target="_Blank" href="Finalizar.html">Clique aqui</a></h2>
+  
+</form>
+        </div>       
+
+</body>
+</html>

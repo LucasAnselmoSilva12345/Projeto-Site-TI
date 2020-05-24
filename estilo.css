@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+body{
+    background-color: #faf9f9;
+    
+}
+p{
+    font-size: 48px;
+    font-weight: bolder; 
+    text-align: center;
+    text-shadow: 3px 3px 3px #606060;
+}
+
+
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bolder;
+	margin-left: 280px;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: justify;
+	margin: relative;
+	float: center;
+	margin-left: 300px;
+	
+	}
+	
+h3 {
+	font-size: 18px;
+	text-align: justify;
+	margin: relative;
+	float: center;
+	margin-left: 300px;
+}
+
+h4 {
+	font-size: 20px;
+	text-align: justify;
+	margin: relative;
+	float: center;
+	margin-left: 280px;
+}
+
+h5{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+	margin-left: 280px;
+}
+
+
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+       
+  .nav {
+    background: #FFF;
+    z-index: 200;
+    position: relative;
+    width: 130%;
+    font-size: 1em;
+    overflow: auto;
+  }
+       
+     .nav ul {
+        padding: 2em;
+      }
+       
+        li {
+	         display: inline-block;
+	         margin-right: 2em;
+         }
+       
+           a {
+	           text-decoration: none;
+	           color: #444;
+           }
+       
+             a:hover {
+       		      color: blue;
+             }
+       
+       .nav-toggle {
+       		display: none;
+       }
+       
+.foto {
+    width: 100%;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 800px) {
+.wrap {
+	 max-width: 100%;
+	 margin: 0;
+}
+  
+  .nav.nav-aberta {
+		   position: relative;
+		   padding: 0 0 0.5em 0;
+		   height: 0;
+	 }   
+	       
+      .nav ul {
+	        padding: .5em;
+	        margin: 0;
+          background: #444;
+	     }		
+	       
+	       li {
+		         margin: 0;
+		         padding: 0;
+		         display: block;
+		         border-bottom: 1px solid #FFF;
+	        }
+       			
+	           li a {
+		           padding: 0.5em 0 0.5em 0;
+		           display: block;
+               color: #FFF;
+	           }
+  
+            li:last-child {
+              border-bottom:none;
+            }
+	       
+	       .nav-toggle {
+	       		display: block;
+	       		padding: .4em;
+	       		margin: .5em 0;
+	       }
+}
+
+figure.foto-legenda{
+    float: center;
+    max-width: 150px;
+    position: relative;
+					}
+           
+            
+            
+            figure.foto-legenda img {
+                width: 100%;
+                height: 100%;
+            }   
+            
+          
+        
+        
+        
+            
+            figure.foto-legenda:hover figcaption {
+                opacity: 1;
+            }
+
+	
+	
+	
+	
+	
+	
+	
+        
+        

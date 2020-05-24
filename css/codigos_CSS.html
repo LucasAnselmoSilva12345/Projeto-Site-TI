@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+<head>
+        <title>World of programming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="Projeto Site TI/imagens" href="imagens/css3_ico.ico"/>
+		<link rel="stylesheet" type="text/css" href="estilo_CSS.css"/>
+		</head>
+		
+		<body>
+		
+		<nav class="nav nav-aberta">
+			<div class="wrap">
+				<ul class="listaNav">
+					<p>CSS</p>
+				<li><a target="_Blank" href="Index.html">Home</a></li>
+					<li><a target="_Blank" href="CSS.html">Home - CSS</a></li>
+					<li><a target="_Blank" href="Historia_CSS.html">História do CSS</a></li>
+					<li><a target="_Blank" href="criador_CSS.html"> Gijsbert (Bert) Bos</a></li>
+					<li><a target="_Blank" href="programas_CSS.html">Programas usados para fazer CSS</a></li>
+					<li><a target="_Blank" href="codigos_CSS.html">Códigos CSS</a></li>
+					<li><a target="_Blank" href="aplicacao_CSS.html">Aplicação CSS</a></li>
+					<li><a target="_Blank" href="Video_CSS.html">Video aula sobre CSS</a></li>
+					</ul>
+			</div>
+		</nav>
+		<h1>Códigos CSS </h1>
+		
+		<h6>3 Tipos de css no HTML</h6>
+		<h2>
+		<ul>
+  <li>Como aplicar CSS a um documento HTML?</li>
+  <li>3 alternativas:
+		<ul>
+      <li><strong>Inline</strong>: aplicadas a um elemento espec&iacute;fico num 
+        documento.</li>
+			<li><img src="imagens/1.png"></li>
+      <li><strong>Internal</strong>: definidas num documento espec&iacute;fico. 
+        Permitem aplicar o estilo apenas a esse documento.</li>
+			<li><img src="imagens/2.png"></li>
+      <li><strong>External</strong>: definidas num ficheiro externo e associadas 
+        a v&aacute;rios documentos HTML.</li>
+			<li><img src="imagens/3.png"></li>
+    </ul>
+	</li>
+</ul>
+		</h2>
+		
+		<h6>Exemplo de CSS aplicado em XML</h6>
+		
+		<h2>O arquivo de exemplo XML renderizado no Mozilla Firefox.</h2>
+		
+		<h2>Arquivo *.XML com ligação para uma folha de estilos em cascata:</h2>
+		
+		
+		<fieldset>
+		<h3>
+		
+		<"?"xml version="1.0" encoding="UTF-8"?><br>
+ <?xml-stylesheet type="text/css" href="css.css"?><br>
+ <schedule><br>
+   <date>Tuesday 20 June</date><br>
+   <programme><br>
+     <starts>6:00</starts><br>
+     <title>News</title><br>
+     With Michael Smith and Fiona Tolstoy.<br>
+     Followed by Weather with Malcolm Stott.<br>
+   </programme><br>
+   <programme><br>
+     <starts>6:30</starts><br>
+     <title>Regional news update</title><br>
+     Local news for your area.<br>
+   </programme><br>
+   <programme><br>
+     <starts>7:00</starts><br>
+	 <img src="imagens/xml.jpg" align="right" width="250" height="250">
+     <title>Unlikely suspect</title><br>
+     Whimsical romantic crime drama starring Janet<br>
+     Hawthorne and Percy Trumpp.<br>
+   </programme><br>
+ </schedule><br>
+		</h3>
+		
+		<h2>O arquivo *.CSS que formata o XML anterior:</h2>
+		<h3>@media screen {<br>
+    schedule {<br>
+      display: block;<br>
+      margin: 10px;<br>
+      width: 300px;<br>
+    }<br>
+    date {<br>
+      display: block;<br>
+      padding: 0.3em;<br>
+      font: bold x-large sans-serif;<br>
+      color: white;<br>
+      background-color: #C6C;<br>
+    }
+    programme {<br>
+      display: block;<br>
+      font: normal medium sans-serif;<br>
+    }<br>
+    programme > * { /* All children of programme elements */<br>
+      font-weight: bold;<br>
+      font-size: large;<br>
+    }<br>
+    title {<br>
+      font-style: italic;<br>
+    }<br>
+  }<br></h3>
+		</fieldset>
+		
+		
+		
+		
+		<h6>CSS e JavaScript</h6>
+		<h2>Pop-up não-bloqueável</h2>
+		<fieldset>
+		<h3>
+		
+		<"html><br>
+  <"head><br>
+
+    <"style type="text/css"><br>
+# popup {<br>
+        position: absolute;<br>
+        top: 30%;<br>
+        left: 30%;<br>
+        width: 300px;<br>
+        height: 150px;<br>
+        padding: 20px 20px 20px 20px;<br>
+        border-width: 2px;<br>
+        border-style: solid;<br>
+        background: #ffffa0;<br>
+	   display: none;<br>
+      }
+	  <img src="imagens/css_jv.png" align="right" width="250" height="250">
+    <"/style"><br>
+
+    <"script type="text/javascript"><br>
+      function abrir() {<br>
+        document.getElementById('popup').style.display = 
+<br>
+'block';<br>
+        setTimeout ("fechar()", 3000);<br>
+      }<br>
+
+      function fechar() {<br>
+        document.getElementById('popup').style.display = 'none';<br>
+      }<br>
+    </"script"><br>
+  </"head><br>
+  <"body onload="abrir()" ><br>
+    <"div id="popup" class="popup"><br>
+      Esse é um exemplo de popup utilizando o elemento <br>
+
+<"code>div</"code>. Dessa maneira esse<br>
+      pop-up não será bloqueado.<br>
+
+      <"small><"a href="javascript: fechar();">[X]</"a></"small><br>
+    </"div"><br>
+
+<"a href="javascript: abrir();">Abrir pop-up</"a><br>
+
+<"a href="javascript: fechar();">Fechar pop-up</"a><br>
+  </"body"><br>
+</"html><br>
+</h3>
+		</fieldset>
+		
+		
+		
+		
+		</body>
+		</html>
